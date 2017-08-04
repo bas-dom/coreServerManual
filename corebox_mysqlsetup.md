@@ -6,6 +6,8 @@
 
 建议下载 mysql-essential-5.1.40-win32.exe
 
+安装位置建议在空间较大的磁盘上
+
 安装采用默认选项，不断Next，注意在配置Instance时需要将端口加入到防火墙意外中，如下图：
 
 ![](http://ww1.sinaimg.cn/large/006R5gQQgy1fgjst6srz9j30e30aqdgm.jpg)
@@ -38,15 +40,7 @@ tmp_table_size=128M
 max_heap_table_size=128M
 ```
 
-找到下列三个变量，查看是否满足条件。
 
-```ini
-default-character-set=utf8
-
-basedir="D:/Program Files/MySQL/MySQL Server 5.1/"
-
-datadir="D:/ProgramData/MySQL/MySQL Server 5.1/Data/"
-```
 
 修改保存后，重新打开MySQL服务（右键计算机-管理，选择服务与应用程序-服务，找到MySQL服务，右键启动服务）。
 
